@@ -2,6 +2,16 @@
 
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 const { join } = require('path');
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: [
+    join(__dirname, 'app', '**', '*.html'),
+    join(__dirname, 'app', '**', '*.hbs'),
+    join(__dirname, 'app', '**', '*.js'),
+  ],
+
+  //defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+  defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [], // modificada para soportar tailwindcss/ui
+});
 
 module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
@@ -14,7 +24,7 @@ module.exports = function (defaults) {
             join(__dirname, 'blueprints', 'idep-style', 'files', 'config', 'tailwind.config.js')
           ),
           require('autoprefixer'),
-          //...process.env.EMBER_ENV === 'production' ? [purgecss] : []
+          ...(process.env.EMBER_ENV === 'production' ? [purgecss] : []),
         ],
       },
     },

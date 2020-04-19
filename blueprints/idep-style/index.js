@@ -15,6 +15,7 @@ module.exports = {
       packages: [{ name: 'ember-cli-postcss', target: '6.0.0' }],
     }).then(() => {
       return this.addPackagesToProject([
+        { name: '@fullhuman/postcss-purgecss', target: '2.1.2' },
         { name: '@tailwindcss/ui', target: '0.1.3' },
         { name: 'animate.css', target: '3.7.2' },
         { name: 'autoprefixer', target: '9.7.6' },

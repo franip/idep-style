@@ -20,6 +20,11 @@ module.exports = function (defaults) {
     },
 
     storeConfigInMeta: false,
+
+    typefaceOptions: {
+      disableAuto: true,
+      typefaces: ['inter', 'muli', 'public-sans', 'roboto'],
+    },
   });
 
   /*

@@ -7,8 +7,10 @@ module.exports = {
         inter: ['Inter', ...defaultTheme.fontFamily.sans],
         'inter-var': ['Inter var', ...defaultTheme.fontFamily.sans],
         muli: ['Muli', ...defaultTheme.fontFamily.sans],
+        product: ['Product Sans', ...defaultTheme.fontFamily.sans],
         public: ['Public Sans', ...defaultTheme.fontFamily.sans],
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+        sf: ['SF UI Text', ...defaultTheme.fontFamily.sans],
       },
 
       // fontSize: {

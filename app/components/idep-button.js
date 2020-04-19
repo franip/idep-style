@@ -1,0 +1,1 @@
+export { default } from 'idep-style/components/idep-button';

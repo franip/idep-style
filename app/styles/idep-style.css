@@ -1,0 +1,27 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'idep-style-components';
+@import 'idep-style-fonts';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';
+/* @import 'utilities'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+  @apply text-sm antialiased leading-5 text-gray-800 bg-purple-50;
+}
+
+.font-product {
+  font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+}
+
+.font-public {
+  font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+}
+
+.font-sf {
+  font-family: 'SF UI Text', Arial, Helvetica, sans-serif;
+}

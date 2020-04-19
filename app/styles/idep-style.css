@@ -2,12 +2,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'idep-style-components';
-@import 'idep-style-fonts';
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
 /* @import 'utilities'; */
 
-html {
+body {
   @apply text-sm antialiased leading-5 text-gray-800 bg-purple-50;
 }

@@ -19,7 +19,7 @@ module.exports = function (defaults) {
       compile: {
         plugins: [
           require('postcss-import')({ path: ['node_modules'] }),
-          // require('postcss-easings'),
+          require('postcss-easings'),
           require('tailwindcss')(
             join(__dirname, 'blueprints', 'idep-style', 'files', 'config', 'tailwind.config.js')
           ),

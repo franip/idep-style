@@ -20,6 +20,7 @@ module.exports = {
         { name: 'animate.css', target: '3.7.2' },
         { name: 'autoprefixer', target: '9.7.6' },
         { name: 'ember-typeface', target: 'git+https://github.com/franip/ember-typeface.git' },
+        { name: 'postcss-easings', target: '2.0.0' },
         { name: 'postcss-import', target: '12.0.1' },
         { name: 'tailwindcss', target: '1.2.0' },
         { name: 'typeface-inter', target: '3.12.0' },
